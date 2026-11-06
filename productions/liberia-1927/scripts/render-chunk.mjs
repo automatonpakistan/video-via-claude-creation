@@ -12,7 +12,9 @@ const id=String(index).padStart(3,'0'),outDir=path.resolve('work/render/chunks')
 const plan={compositionId:'Liberia1927',index,count,start,end,frames:end-start+1,totalFrames:total,fps,scale,width:1440,height:2560,frameCoordinates:'global inclusive',previewDpr:'omitted'};
 if(args.includes('--plan')){console.log(JSON.stringify(plan));process.exit(0);}
 fs.mkdirSync(outDir,{recursive:true});
-const tmp=path.resolve('work/remotion-tmp');fs.mkdirSync(tmp,{recursive:true});
+// Chromium's Unix socket path must remain below the platform length limit.
+// GitHub's nested checkout path is too long for Chrome's SingletonSocket.
+const tmp=process.env.RENDER_TMP??`/tmp/lbr-${process.env.GITHUB_RUN_ID??'local'}-${index}`;fs.mkdirSync(tmp,{recursive:true});
 process.env.TMPDIR=tmp;process.env.TMP=tmp;process.env.TEMP=tmp;
 const browserExecutable=process.env.RENDER_BROWSER??['/usr/bin/google-chrome','/usr/bin/google-chrome-stable','/usr/bin/chromium'].find(p=>fs.existsSync(p));
 if(!browserExecutable)throw new Error('No installed Chrome/Chromium; set RENDER_BROWSER');
