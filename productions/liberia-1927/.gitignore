@@ -1,0 +1,5 @@
+node_modules/
+work/remotion-tmp/
+work/render/
+output/
+__pycache__/

@@ -1,0 +1,28 @@
+[aist#0:0/pcm_s24le @ 0x562c03257100] Guessed Channel Layout: stereo
+Input #0, wav, from '/workspace/shorts-dev/work/liberia-1927/audio/premaster.wav':
+  Duration: 00:00:46.40, bitrate: 2304 kb/s
+  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s24le (native) -> pcm_s24le (native))
+Press [q] to stop, [?] for help
+Output #0, wav, to '/workspace/shorts-dev/work/liberia-1927/audio/mix.wav':
+  Metadata:
+    ISFT            : Lavf61.7.103
+  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s
+      Metadata:
+        encoder         : Lavc61.19.101 pcm_s24le
+[Parsed_loudnorm_0 @ 0x7f9c04002800] 
+{
+	"input_i" : "-16.83",
+	"input_tp" : "-3.93",
+	"input_lra" : "2.10",
+	"input_thresh" : "-26.86",
+	"output_i" : "-15.00",
+	"output_tp" : "-2.10",
+	"output_lra" : "2.00",
+	"output_thresh" : "-25.03",
+	"normalization_type" : "linear",
+	"target_offset" : "-0.00"
+}
+[out#0/wav @ 0x562c032572c0] video:0KiB audio:13050KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.000763%
+size=   13050KiB time=00:00:46.40 bitrate=2304.0kbits/s speed= 304x    

@@ -1,0 +1,44 @@
+[
+  {
+    "start": 0.16,
+    "end": 45.6,
+    "event": "Original quiet G-minor plucked pattern,88bpm; gap for Faulkner question",
+    "type": "music"
+  },
+  {
+    "start": 0.25,
+    "end": 5.3,
+    "event": "Low paper flutter following the airborne sheets; no impact claim",
+    "type": "sfx"
+  },
+  {
+    "start": 5.416,
+    "end": 15.694,
+    "event": "Quiet coastal air and surf while outdoors",
+    "type": "ambience"
+  },
+  {
+    "start": 16.509,
+    "end": 18.879,
+    "event": "16 staggered paper shifts during first stack growth; centers16.644+i*0.14",
+    "type": "sfx"
+  },
+  {
+    "start": 30.15,
+    "end": 30.55,
+    "event": "Faulkner small pile settling/growing, ahead of nine at30.580",
+    "type": "sfx"
+  },
+  {
+    "start": 35.222,
+    "end": 35.582,
+    "event": "Single added paper bundle settles; seventeen cue35.289",
+    "type": "sfx"
+  },
+  {
+    "start": 38.355,
+    "end": 40.155,
+    "event": "Archive page turn at corrected hinge, same1.8s window",
+    "type": "sfx"
+  }
+]

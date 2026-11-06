@@ -1,0 +1,16 @@
+{
+  "engine": "native Piper",
+  "version": "1.8.0",
+  "model": "en_US-ryan-high",
+  "model_sha256": "4343c10fd88301574d2012b3d006fa5fc8fdf18d04ca9564ef399eed180d8788",
+  "length_scale": 1.2,
+  "other_synthesis_settings": "Piper defaults",
+  "pronunciation_expansion": "D. B. -> Dee Bee",
+  "output_sample_rate": 48000,
+  "subtype": "PCM_24",
+  "channels": 1,
+  "duration": 46.3835625,
+  "raw_peak": 1.0364023447036743,
+  "uniform_gain": 0.6830800682784561,
+  "peak_dbfs": -3.0000002493010487
+}

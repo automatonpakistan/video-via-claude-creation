@@ -1,0 +1,28 @@
+[aist#0:0/pcm_s24le @ 0x562b1d462240] Guessed Channel Layout: mono
+Input #0, wav, from 'work/liberia-1927/voice/voice.wav':
+  Duration: 00:00:46.38, bitrate: 1152 kb/s
+  Stream #0:0: Audio: pcm_s24le ([1][0][0][0] / 0x0001), 48000 Hz, mono, s32 (24 bit), 1152 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_s24le (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf61.7.103
+  Stream #0:0: Audio: pcm_s16le, 192000 Hz, mono, s16, 3072 kb/s
+      Metadata:
+        encoder         : Lavc61.19.101 pcm_s16le
+size=N/A time=00:00:31.40 bitrate=N/A speed=62.8x    [Parsed_loudnorm_0 @ 0x7f866c002080] 
+{
+	"input_i" : "-18.60",
+	"input_tp" : "-3.00",
+	"input_lra" : "2.00",
+	"input_thresh" : "-28.65",
+	"output_i" : "-15.54",
+	"output_tp" : "-1.50",
+	"output_lra" : "2.00",
+	"output_thresh" : "-25.57",
+	"normalization_type" : "dynamic",
+	"target_offset" : "0.54"
+}
+[out#0/null @ 0x562b1d462400] video:0KiB audio:17394KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:00:46.40 bitrate=N/A speed=65.5x    

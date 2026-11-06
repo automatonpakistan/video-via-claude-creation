@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "text": "Fifteen thousand registered voters. Two hundred and forty-three thousand votes for one man.",
+    "spoken_text": "Fifteen thousand registered voters. Two hundred and forty-three thousand votes for one man.",
+    "start": 0.08,
+    "end": 5.316125,
+    "duration": 5.236125
+  },
+  {
+    "id": 2,
+    "text": "That's the record from Liberia's nineteen twenty-seven presidential election.",
+    "spoken_text": "That's the record from Liberia's nineteen twenty-seven presidential election.",
+    "start": 5.416125,
+    "end": 9.688604166666666,
+    "duration": 4.272479166666667
+  },
+  {
+    "id": 3,
+    "text": "The man was President Charles D. B. King, running for another term against Thomas Faulkner.",
+    "spoken_text": "The man was President Charles Dee Bee King, running for another term against Thomas Faulkner.",
+    "start": 9.788604166666667,
+    "end": 15.593604166666667,
+    "duration": 5.805
+  },
+  {
+    "id": 4,
+    "text": "King was credited with more than sixteen times as many votes as there were registered voters in the entire country.",
+    "spoken_text": "King was credited with more than sixteen times as many votes as there were registered voters in the entire country.",
+    "start": 15.693604166666667,
+    "end": 21.835291666666667,
+    "duration": 6.1416875
+  },
+  {
+    "id": 5,
+    "text": "Even if every registered voter had chosen him, he'd still have been two hundred and twenty-eight thousand votes short.",
+    "spoken_text": "Even if every registered voter had chosen him, he'd still have been two hundred and twenty-eight thousand votes short.",
+    "start": 21.935291666666668,
+    "end": 28.274354166666665,
+    "duration": 6.3390625
+  },
+  {
+    "id": 6,
+    "text": "And Faulkner? He was credited with another nine thousand.",
+    "spoken_text": "And Faulkner? He was credited with another nine thousand.",
+    "start": 28.374354166666667,
+    "end": 31.4278125,
+    "duration": 3.0534583333333334
+  },
+  {
+    "id": 7,
+    "text": "Put those totals together, and the reported votes amount to almost seventeen ballots for every registered voter.",
+    "spoken_text": "Put those totals together, and the reported votes amount to almost seventeen ballots for every registered voter.",
+    "start": 31.5278125,
+    "end": 37.855270833333336,
+    "duration": 6.327458333333333
+  },
+  {
+    "id": 8,
+    "text": "The election later entered the Guinness Book of Records as the most fraudulent ever reported.",
+    "spoken_text": "The election later entered the Guinness Book of Records as the most fraudulent ever reported.",
+    "start": 37.95527083333333,
+    "end": 42.9475625,
+    "duration": 4.992291666666667
+  },
+  {
+    "id": 9,
+    "text": "King got another term. And the election got a world record.",
+    "spoken_text": "King got another term. And the election got a world record.",
+    "start": 43.0475625,
+    "end": 46.2635625,
+    "duration": 3.216
+  }
+]

@@ -1,0 +1,79 @@
+{
+  "duration": 46.4,
+  "sample_rate": 48000,
+  "channels": 2,
+  "subtype": "PCM_24",
+  "samples": 2227200,
+  "source_voice": "Existing approved native Piper en_US-ryan-high recording; no regeneration",
+  "music": "Original G-minor pizzicato,88bpm; seed19270503",
+  "sfx": "Original procedural paper movement and coastal ambience; no external samples",
+  "word_ducking_db": 5,
+  "music_standard_offset_db": 3,
+  "sfx_standard_offset_db": -6,
+  "score_source_calibration_gain": 3.5,
+  "foley_source_calibration_gain": 8,
+  "voice_premaster_gain": 0.86,
+  "premaster_peak_dbfs": -3.9274675537222437,
+  "master_peak_dbfs": -2.0974684937761223,
+  "measured_premaster": {
+    "input_i": "-16.83",
+    "input_tp": "-3.91",
+    "input_lra": "2.10",
+    "input_thresh": "-26.87",
+    "output_i": "-15.04",
+    "output_tp": "-1.92",
+    "output_lra": "2.20",
+    "output_thresh": "-25.08",
+    "normalization_type": "dynamic",
+    "target_offset": "0.04"
+  },
+  "measured_master": {
+    "input_i": "-15.00",
+    "input_tp": "-2.08",
+    "input_lra": "2.00",
+    "input_thresh": "-25.04",
+    "output_i": "-15.04",
+    "output_tp": "-1.92",
+    "output_lra": "2.20",
+    "output_thresh": "-25.08",
+    "normalization_type": "dynamic",
+    "target_offset": "0.04"
+  },
+  "applied_normalization": {
+    "input_i": "-16.83",
+    "input_tp": "-3.93",
+    "input_lra": "2.10",
+    "input_thresh": "-26.86",
+    "output_i": "-15.00",
+    "output_tp": "-2.10",
+    "output_lra": "2.00",
+    "output_thresh": "-25.03",
+    "normalization_type": "linear",
+    "target_offset": "-0.00"
+  },
+  "stem_rms_dbfs": {
+    "voice": -18.429177924375477,
+    "music": -36.62482586947628,
+    "effects": -51.66081717164238
+  },
+  "source_voice_sample_identity_verified": true,
+  "manual_listening_verified": false,
+  "limitations": [
+    "The full mix and pronunciation still need auditory review; no manual listening is claimed.",
+    "Word timings are model-derived, with six coarticulated lexical boundaries explicitly flagged."
+  ],
+  "measured_aac256": {
+    "input_i": "-15.03",
+    "input_tp": "-2.08",
+    "input_lra": "2.00",
+    "input_thresh": "-25.07",
+    "output_i": "-15.04",
+    "output_tp": "-1.90",
+    "output_lra": "2.20",
+    "output_thresh": "-25.07",
+    "normalization_type": "dynamic",
+    "target_offset": "0.04"
+  },
+  "mix_wav_sha256": "89c73d048c441fea2cb61758c349f5caf97c92f8befa41399f34c9729e239268",
+  "mix_m4a_sha256": "24a6d136d3f52050b819c9369798e6c54223a300f495f8b12bdf34edbb62f528"
+}

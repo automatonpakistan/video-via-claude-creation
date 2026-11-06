@@ -1,0 +1,128 @@
+{
+  "method": "Piper 1.8 native phoneme sample durations, lexical mapping from actual space-delimited phoneme groups",
+  "source": "preserved voice/phonemes.json from original narration",
+  "resampling": "Original model phoneme durations in 22050Hz samples converted to seconds; preserved chunk and paragraph placement offsets.",
+  "even_word_distribution_used": false,
+  "independent_ASR_verification": false,
+  "manual_listening_verification": false,
+  "pronunciation_expansion": {
+    "D.": "Dee",
+    "B.": "Bee"
+  },
+  "coarticulation_cases": [
+    {
+      "segment": 4,
+      "word": "there",
+      "start": 19.304307114512472,
+      "limitation": "Lexical boundary inferred from observed coarticulated phonemes; not independently ASR-verified."
+    },
+    {
+      "segment": 4,
+      "word": "were",
+      "start": 19.385576955782312,
+      "limitation": "Lexical boundary inferred from observed coarticulated phonemes; not independently ASR-verified."
+    },
+    {
+      "segment": 4,
+      "word": "in",
+      "start": 20.62784452947846,
+      "limitation": "Lexical boundary inferred from observed coarticulated phonemes; not independently ASR-verified."
+    },
+    {
+      "segment": 4,
+      "word": "the",
+      "start": 20.72072434807256,
+      "limitation": "Lexical boundary inferred from observed coarticulated phonemes; not independently ASR-verified."
+    },
+    {
+      "segment": 5,
+      "word": "have",
+      "start": 25.22091524943311,
+      "limitation": "Lexical boundary inferred from observed coarticulated phonemes; not independently ASR-verified."
+    },
+    {
+      "segment": 5,
+      "word": "been",
+      "start": 25.371844954648527,
+      "limitation": "Lexical boundary inferred from observed coarticulated phonemes; not independently ASR-verified."
+    }
+  ],
+  "validation": [
+    {
+      "segment": 1,
+      "written_word_count": 13,
+      "spoken_word_count": 13,
+      "timed_word_count": 13,
+      "monotonic": true,
+      "within_segment_boundaries": true
+    },
+    {
+      "segment": 2,
+      "written_word_count": 9,
+      "spoken_word_count": 9,
+      "timed_word_count": 9,
+      "monotonic": true,
+      "within_segment_boundaries": true
+    },
+    {
+      "segment": 3,
+      "written_word_count": 15,
+      "spoken_word_count": 15,
+      "timed_word_count": 15,
+      "monotonic": true,
+      "within_segment_boundaries": true
+    },
+    {
+      "segment": 4,
+      "written_word_count": 20,
+      "spoken_word_count": 20,
+      "timed_word_count": 20,
+      "monotonic": true,
+      "within_segment_boundaries": true
+    },
+    {
+      "segment": 5,
+      "written_word_count": 19,
+      "spoken_word_count": 19,
+      "timed_word_count": 19,
+      "monotonic": true,
+      "within_segment_boundaries": true
+    },
+    {
+      "segment": 6,
+      "written_word_count": 9,
+      "spoken_word_count": 9,
+      "timed_word_count": 9,
+      "monotonic": true,
+      "within_segment_boundaries": true
+    },
+    {
+      "segment": 7,
+      "written_word_count": 17,
+      "spoken_word_count": 17,
+      "timed_word_count": 17,
+      "monotonic": true,
+      "within_segment_boundaries": true
+    },
+    {
+      "segment": 8,
+      "written_word_count": 15,
+      "spoken_word_count": 15,
+      "timed_word_count": 15,
+      "monotonic": true,
+      "within_segment_boundaries": true
+    },
+    {
+      "segment": 9,
+      "written_word_count": 11,
+      "spoken_word_count": 11,
+      "timed_word_count": 11,
+      "monotonic": true,
+      "within_segment_boundaries": true
+    }
+  ],
+  "limitations": [
+    "Model-derived durations are not independent ASR timings.",
+    "No auditory verification is claimed; pronunciation and full-mix listening remain a final QA requirement."
+  ]
+}

@@ -1,0 +1,89 @@
+name: Liberia 1927 parallel render
+on:
+  workflow_dispatch:
+  push:
+    branches: ['render/liberia-1927-*']
+    paths:
+      - 'productions/liberia-1927/**'
+      - '.github/workflows/liberia-1927-render.yml'
+permissions:
+  contents: read
+concurrency:
+  group: liberia-1927-${{ github.ref }}
+  cancel-in-progress: false
+defaults:
+  run:
+    working-directory: productions/liberia-1927
+jobs:
+  render:
+    name: Render chunk ${{ matrix.chunk }} of 12
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      max-parallel: 12
+      matrix:
+        chunk: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    env:
+      RENDER_BROWSER: /usr/bin/google-chrome
+      RENDER_CONCURRENCY: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: productions/liberia-1927/package-lock.json
+      - name: Check browser and install FFmpeg
+        run: |
+          test -x "$RENDER_BROWSER"
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends ffmpeg
+      - name: Install locked renderer dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Render native 1440 x 2560 chunk
+        run: node scripts/render-chunk.mjs ${{ matrix.chunk }} 12
+      - name: Upload chunk and manifest
+        uses: actions/upload-artifact@v4
+        with:
+          name: liberia-1927-chunk-${{ matrix.chunk }}
+          path: productions/liberia-1927/work/render/chunks/*
+          if-no-files-found: error
+          retention-days: 14
+          compression-level: 0
+  assemble:
+    name: Assemble, mix and validate final video
+    needs: render
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends ffmpeg
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: liberia-1927-chunk-*
+          path: productions/liberia-1927/work/render/chunks
+          merge-multiple: true
+      - name: Verify ranges, assemble, mux and run QA
+        run: node scripts/assemble-render.mjs
+      - name: Upload final video and QA
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: liberia-1927-final
+          path: |
+            productions/liberia-1927/output/liberia-1927/liberia-1927-final.mp4
+            productions/liberia-1927/output/liberia-1927/assembly.json
+            productions/liberia-1927/output/liberia-1927/ffprobe.json
+            productions/liberia-1927/output/liberia-1927/qa.json
+            productions/liberia-1927/output/liberia-1927/frame-metrics.json
+            productions/liberia-1927/output/liberia-1927/aac-loudness.txt
+          if-no-files-found: error
+          retention-days: 14
+          compression-level: 0
