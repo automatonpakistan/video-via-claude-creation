@@ -253,7 +253,7 @@ export class World{
    this.hallFaulkner.update(camera,time,[2.05,0,-.65],s.id===6&&time>=28.598?'stern':'neutral',{headTilt:s.id===6?4*smooth((time-28.43)/.168):0});
    this.faulknerPile.scale.y=s.id===6?Math.max(.04,smooth((time-30.05)/.5)):1;
    this.hallPiles.forEach((p,i)=>{const progress=s.id===4?smooth((local-.4-i*.14)/1.1):1;p.scale.y=Math.max(.035,progress);});
-   const extra=smooth((time-34.722)/.5);this.extraBundle.visible=s.id===7&&time>=34.722;this.extraBundle.position.y=2.25+(1-extra)*.55;this.extraBundle.rotation.z=(1-extra)*.14;
+   const extra=smooth((time-34.722)/.5);this.extraBundle.visible=s.id===7&&time>=34.722;this.extraBundle.position.y=2.5+(1-extra)*.55;this.extraBundle.rotation.z=(1-extra)*.14;
    this.hallVoters.forEach((a,i)=>{a.mesh.visible=a.blob.visible=s.id===4||s.id===7;a.update(camera,time,[-3.6+(i%2)*.6,0,1.8+i*.45],s.id===7&&time>=35.222?'shock':'neutral',{headTilt:i%2?2:-2});});
   }
   if(this.archive.visible){
